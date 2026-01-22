@@ -9,7 +9,7 @@ const projects = [
     description: 'A full-stack financial platform for group savings and lending with user authentication, admin dashboard, and transaction management',
     image: 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&q=80',
     tags: ['React', 'Spring Boot', 'PostgreSQL', 'REST API'],
-    liveUrl: 'https://kasikotas-frondend.onrender.com/',
+    liveUrl: 'https://kasi-kotas-frondend.vercel.app/',
     githubUrl: '#',
   },
   {
