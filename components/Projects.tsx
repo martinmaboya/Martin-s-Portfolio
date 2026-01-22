@@ -1,0 +1,135 @@
+'use client'
+
+import Image from 'next/image'
+import { ExternalLink, Github } from 'lucide-react'
+
+const projects = [
+  {
+    title: 'Kasikotas Platform',
+    description: 'A full-stack financial platform for group savings and lending with user authentication, admin dashboard, and transaction management',
+    image: 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&q=80',
+    tags: ['React', 'Spring Boot', 'PostgreSQL', 'REST API'],
+    liveUrl: 'https://kasikotas-frondend.onrender.com/',
+    githubUrl: '#',
+  },
+  {
+    title: 'E-Commerce Platform',
+    description: 'A full-stack e-commerce solution with payment integration, admin dashboard, and real-time inventory management',
+    image: 'https://images.unsplash.com/photo-1557821552-17105176677c?w=800&q=80',
+    tags: ['Java', 'Spring Boot', 'MySQL', 'REST API'],
+    liveUrl: '#',
+    githubUrl: '#',
+  },
+  {
+    title: 'Task Management System',
+    description: 'Collaborative task manager with role-based access control, real-time updates, and team workspaces',
+    image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&q=80',
+    tags: ['React', 'Spring Security', 'JWT', 'PostgreSQL'],
+    liveUrl: '#',
+    githubUrl: '#',
+  },
+  {
+    title: 'Real-Time Analytics Dashboard',
+    description: 'Business intelligence platform with interactive charts, data visualization, and custom reporting',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80',
+    tags: ['React', 'Java', 'Python', 'SQL'],
+    liveUrl: '#',
+    githubUrl: '#',
+  },
+  {
+    title: 'CMS Portal',
+    description: 'Content management system built with Joomla for easy website administration and content publishing',
+    image: 'https://images.unsplash.com/photo-1547658719-da2b51169166?w=800&q=80',
+    tags: ['Joomla', 'PHP', 'MySQL', 'JavaScript'],
+    liveUrl: '#',
+    githubUrl: '#',
+  },
+  {
+    title: 'Microservices Architecture',
+    description: 'Scalable microservices solution with Docker containerization, Kubernetes orchestration, and API gateway',
+    image: 'https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=800&q=80',
+    tags: ['Java', 'Spring Boot', 'Docker', 'Kubernetes'],
+    liveUrl: '#',
+    githubUrl: '#',
+  },
+]
+
+export default function Projects() {
+  return (
+    <section id="projects" className="section-padding bg-gradient-to-b from-gray-50 to-white">
+      <div className="container-width">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Featured Projects
+          </h2>
+          <div className="w-20 h-1 bg-gradient-to-r from-primary-600 to-purple-600 mx-auto mb-4" />
+          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+            Here are some of my recent projects showcasing my skills in full-stack development
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project, index) => (
+            <div
+              key={project.title}
+              className="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+              style={{ animationDelay: `${index * 100}ms` }}
+            >
+              {/* Project Image */}
+              <div className="relative h-48 overflow-hidden">
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  fill
+                  className="object-cover group-hover:scale-110 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-4 gap-4">
+                  <a
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 bg-white rounded-full hover:scale-110 transition-transform"
+                    aria-label="View live site"
+                  >
+                    <ExternalLink className="w-5 h-5 text-primary-600" />
+                  </a>
+                  <a
+                    href={project.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 bg-white rounded-full hover:scale-110 transition-transform"
+                    aria-label="View source code"
+                  >
+                    <Github className="w-5 h-5 text-primary-600" />
+                  </a>
+                </div>
+              </div>
+
+              {/* Project Info */}
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary-600 transition-colors">
+                  {project.title}
+                </h3>
+                <p className="text-gray-600 mb-4 line-clamp-2">
+                  {project.description}
+                </p>
+
+                {/* Tags */}
+                <div className="flex flex-wrap gap-2">
+                  {project.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="px-3 py-1 text-sm bg-gradient-to-r from-primary-50 to-purple-50 text-primary-700 rounded-full font-medium"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
