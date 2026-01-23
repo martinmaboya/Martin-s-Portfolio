@@ -8,7 +8,7 @@ export default function Footer() {
           {/* Social Links */}
           <div className="flex items-center gap-6">
             <a
-              href="https://github.com"
+              href="https://github.com/martinmaboya"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-white/10 hover:bg-white/20 transition-all hover:scale-110"
@@ -17,7 +17,7 @@ export default function Footer() {
               <Github className="w-5 h-5" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/martin-maboya-798baa233/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-white/10 hover:bg-white/20 transition-all hover:scale-110"
@@ -35,7 +35,7 @@ export default function Footer() {
               <Twitter className="w-5 h-5" />
             </a>
             <a
-              href="mailto:your.email@example.com"
+              href="mailto:m.maboya@yahoo.com"
               className="p-3 rounded-full bg-white/10 hover:bg-white/20 transition-all hover:scale-110"
               aria-label="Email"
             >

@@ -54,7 +54,7 @@ export default function Hero() {
           {/* Social Links */}
           <div className="flex items-center justify-center gap-6 animate-slide-up delay-500">
             <a
-              href="https://github.com"
+              href="https://github.com/martinmaboya"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-white shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 text-gray-700 hover:text-primary-600"
@@ -63,7 +63,7 @@ export default function Hero() {
               <Github className="w-6 h-6" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/martin-maboya-798baa233/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-white shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 text-gray-700 hover:text-primary-600"
@@ -72,7 +72,7 @@ export default function Hero() {
               <Linkedin className="w-6 h-6" />
             </a>
             <a
-              href="mailto:your.email@example.com"
+              href="mailto:m.maboya@yahoo.com"
               className="p-3 rounded-full bg-white shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 text-gray-700 hover:text-primary-600"
               aria-label="Email"
             >
