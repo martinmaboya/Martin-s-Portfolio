@@ -6,6 +6,22 @@ export async function POST(request: Request) {
   const resend = new Resend(process.env.RESEND_API_KEY)
   
   try {
+    // Check if API key exists
+    if (!process.env.RESEND_API_KEY) {
+      console.error('RESEND_API_KEY is not set')
+      return NextResponse.json(
+        { error: 'Email service not configured' },
+        { status: 500 }
+      )
+    }
+
+    if (!process.env.CONTACT_EMAIL) {
+      console.error('CONTACT_EMAIL is not set')
+      return NextResponse.json(
+        { error: 'Contact email not configured' },
+        { status: 500 }
+      )
+    }
     const body = await request.json()
     const { name, email, subject, message } = body
 
