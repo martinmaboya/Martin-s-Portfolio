@@ -6,8 +6,8 @@ import { ExternalLink, Github } from 'lucide-react'
 const projects = [
   {
     title: 'Kasikotas Platform',
-    description: 'A full-stack financial platform for group savings and lending with user authentication, admin dashboard, and transaction management',
-    image: 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&q=80',
+    description: 'A convenient food ordering platform designed for students to order delicious kotas and other fast food from the comfort of their rooms. Features real-time order tracking, multiple payment options, and seamless delivery coordination.',
+    image: '/kota-image.jpg',
     tags: ['React', 'Spring Boot', 'PostgreSQL', 'REST API'],
     liveUrl: 'https://kasi-kotas-frondend.vercel.app/',
     githubUrl: '#',
