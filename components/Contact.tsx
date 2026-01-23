@@ -112,7 +112,7 @@ export default function Contact() {
                     href="tel:+1234567890"
                     className="text-gray-600 hover:text-primary-600 transition-colors"
                   >
-                    +1 (234) 567-890
+                    +27 234 567 8901
                   </a>
                 </div>
               </div>
@@ -133,7 +133,7 @@ export default function Contact() {
                 onChange={handleChange}
                 required
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-600 focus:border-transparent transition-all outline-none"
-                placeholder="John Doe"
+                placeholder="Martin Maboya"
               />
             </div>
 
@@ -149,7 +149,7 @@ export default function Contact() {
                 onChange={handleChange}
                 required
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-600 focus:border-transparent transition-all outline-none"
-                placeholder="john@example.com"
+                placeholder="martin.maboya@example.com"
               />
             </div>
 
