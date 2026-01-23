@@ -1,19 +1,7 @@
 import { NextResponse } from 'next/server'
-import nodemailer from 'nodemailer'
+import { Resend } from 'resend'
 
-// Create transporter using Yahoo Mail credentials
-const transporter = nodemailer.createTransport({
-  host: process.env.EMAIL_HOST,
-  port: parseInt(process.env.EMAIL_PORT || '587'),
-  secure: false,
-  auth: {
-    user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASSWORD,
-  },
-  tls: {
-    rejectUnauthorized: false,
-  },
-})
+const resend = new Resend(process.env.RESEND_API_KEY)
 
 export async function POST(request: Request) {
   try {
@@ -37,10 +25,10 @@ export async function POST(request: Request) {
       )
     }
 
-    // Send email using Nodemailer
-    await transporter.sendMail({
-      from: process.env.EMAIL_FROM,
-      to: process.env.CONTACT_EMAIL,
+    // Send email using Resend
+    const { data, error } = await resend.emails.send({
+      from: 'Portfolio Contact <onboarding@resend.dev>',
+      to: process.env.CONTACT_EMAIL!,
       replyTo: email,
       subject: `Portfolio Contact: ${subject}`,
       html: `
@@ -155,10 +143,19 @@ Reply to this email to respond to ${name}
       `,
     })
 
+    if (error) {
+      console.error('Resend error:', error)
+      return NextResponse.json(
+        { error: 'Failed to send email', details: error.message },
+        { status: 500 }
+      )
+    }
+
     return NextResponse.json(
       { 
         success: true, 
-        message: 'Email sent successfully'
+        message: 'Email sent successfully',
+        data
       },
       { status: 200 }
     )
