@@ -13,6 +13,14 @@ const projects = [
     githubUrl: '#',
   },
   {
+    title: 'Financial Digital Twin',
+    description: 'AI-powered risk simulation system that predicts customer financial stress before loans are approved. Runs worst-case scenarios (job loss, income reduction, market stress) and projects portfolio-level risk, months-to-crisis, and defaults in under 2 seconds. Helps banks anticipate risk 3-6 months in advance instead of reacting to bad debt.',
+    image: '/financial-twin.jpg',
+    tags: ['Spring Boot', 'Financial Analytics', 'AI Simulation', 'Risk Management'],
+    liveUrl: '#',
+    githubUrl: '#',
+  },
+  {
     title: 'E-Commerce Platform',
     description: 'A full-stack e-commerce solution with payment integration, admin dashboard, and real-time inventory management',
     image: 'https://images.unsplash.com/photo-1557821552-17105176677c?w=800&q=80',
