@@ -10,7 +10,7 @@ const projects = [
     image: '/kota-image.jpg',
     tags: ['React', 'Spring Boot', 'PostgreSQL', 'REST API'],
     liveUrl: 'https://kasi-kotas-frondend.vercel.app/',
-    githubUrl: '#',
+    githubUrl: 'https://github.com/martinmaboya/KasiKotas-Frondend',
   },
   {
     title: 'Financial Digital Twin',
@@ -18,7 +18,7 @@ const projects = [
     image: '/financial-twin.jpg',
     tags: ['Spring Boot', 'Financial Analytics', 'AI Simulation', 'Risk Management'],
     liveUrl: '#',
-    githubUrl: '#',
+    githubUrl: 'https://github.com/martinmaboya/financial-digital-twin',
   },
   {
     title: 'E-Commerce Platform',
