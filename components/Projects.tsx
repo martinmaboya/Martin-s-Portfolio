@@ -20,46 +20,6 @@ const projects = [
     liveUrl: '#',
     githubUrl: 'https://github.com/martinmaboya/financial-digital-twin',
   },
-  {
-    title: 'E-Commerce Platform',
-    description: 'A full-stack e-commerce solution with payment integration, admin dashboard, and real-time inventory management',
-    image: 'https://images.unsplash.com/photo-1557821552-17105176677c?w=800&q=80',
-    tags: ['Java', 'Spring Boot', 'MySQL', 'REST API'],
-    liveUrl: '#',
-    githubUrl: '#',
-  },
-  {
-    title: 'Task Management System',
-    description: 'Collaborative task manager with role-based access control, real-time updates, and team workspaces',
-    image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&q=80',
-    tags: ['React', 'Spring Security', 'JWT', 'PostgreSQL'],
-    liveUrl: '#',
-    githubUrl: '#',
-  },
-  {
-    title: 'Real-Time Analytics Dashboard',
-    description: 'Business intelligence platform with interactive charts, data visualization, and custom reporting',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80',
-    tags: ['React', 'Java', 'Python', 'SQL'],
-    liveUrl: '#',
-    githubUrl: '#',
-  },
-  {
-    title: 'CMS Portal',
-    description: 'Content management system built with Joomla for easy website administration and content publishing',
-    image: 'https://images.unsplash.com/photo-1547658719-da2b51169166?w=800&q=80',
-    tags: ['Joomla', 'PHP', 'MySQL', 'JavaScript'],
-    liveUrl: '#',
-    githubUrl: '#',
-  },
-  {
-    title: 'Microservices Architecture',
-    description: 'Scalable microservices solution with Docker containerization, Kubernetes orchestration, and API gateway',
-    image: 'https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=800&q=80',
-    tags: ['Java', 'Spring Boot', 'Docker', 'Kubernetes'],
-    liveUrl: '#',
-    githubUrl: '#',
-  },
 ]
 
 export default function Projects() {
