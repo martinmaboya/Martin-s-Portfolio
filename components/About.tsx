@@ -57,7 +57,7 @@ export default function About() {
             {/* Resume Download Button */}
             <div className="pt-4">
               <a
-                href="/resume.pdf"
+                href="/MartinMaboyaResume.pdf"
                 download
                 className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-primary-600 to-purple-600 text-white font-semibold rounded-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
               >

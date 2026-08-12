@@ -9,7 +9,7 @@ const projects = [
     description: 'A convenient food ordering platform designed for students to order delicious kotas and other fast food from the comfort of their rooms. Features real-time order tracking, multiple payment options, and seamless delivery coordination.',
     image: '/kota-image.jpg',
     tags: ['React', 'Spring Boot', 'PostgreSQL', 'REST API'],
-    liveUrl: 'https://kasikotas-frondend.onrender.com',
+    liveUrl: 'https://kasikotas.co.za',
     githubUrl: 'https://github.com/martinmaboya/KasiKotas-Frondend',
   },
   {
